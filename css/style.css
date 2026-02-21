@@ -114,46 +114,22 @@ nav a:hover {
 }
 
 /* ===============================
-   PREMIUM DARK HERO
+   PREMIUM HERO SECTION
 ================================= */
 
 .hero {
-    background: var(--dark-bg);
+    background: linear-gradient(-45deg, #0F172A, #1E293B, #0F172A, #1E293B);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
     color: white;
-    padding: 150px 20px;
+    padding: 160px 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
 }
 
-.hero h1 {
-    font-size: 48px;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 25px;
-}
+/* Subtle Glow Accent */
 
-.hero p {
-    max-width: 600px;
-    margin: auto;
-    margin-bottom: 40px;
-    opacity: 0.8;
-    font-size: 18px;
-}
-
-.btn {
-    background: var(--primary-gradient);
-    padding: 14px 32px;
-    border-radius: 50px;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s ease;
-}
-
-.btn:hover {
-    transform: scale(1.05);
-}
 .hero::before {
     content: "";
     position: absolute;
@@ -163,7 +139,101 @@ nav a:hover {
     filter: blur(120px);
     top: -100px;
     right: -100px;
-    opacity: 0.4;
+    opacity: 0.3;
+}
+
+/* Heading */
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 25px;
+
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeSlideUp 1s ease forwards,
+               floatText 4s ease-in-out infinite 1.5s;
+}
+
+/* Paragraph */
+
+.hero p {
+    font-size: 18px;
+    opacity: 0;
+    max-width: 650px;
+    margin: auto;
+    margin-bottom: 40px;
+
+    transform: translateY(40px);
+    animation: fadeSlideUp 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    background: var(--primary-gradient);
+    padding: 14px 32px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeSlideUp 1s ease forwards;
+    animation-delay: 0.6s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
+}
+
+/* ===============================
+   ANIMATIONS
+================================= */
+
+@keyframes fadeSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatText {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 130px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
 }
 
 /* ===============================
@@ -608,3 +678,4 @@ footer {
     }
 
 }
+
