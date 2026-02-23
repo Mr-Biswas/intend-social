@@ -632,7 +632,7 @@ footer {
 /* Social Box */
 
 .social-box {
-    max-width: 200px;
+    max-width: 400px;
     margin: auto;
 }
 
@@ -650,8 +650,8 @@ footer {
 .social-icons a {
     font-size: 30px;
     color: white;
-    background: #070e75;
-    padding: 12px;
+    background: #1070e75;
+    padding: 10px;
     border-radius: 50%;
     transition: 0.3s ease;
 }
@@ -678,5 +678,6 @@ footer {
     }
 
 }
+
 
 
