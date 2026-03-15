@@ -470,7 +470,7 @@ footer {
 
 .team-card {
     min-width: 250px;
-    background: #7eb2e2f8;
+    background: #b2d0ecf8;
     padding: 30px;
     border-radius: 18px;
     box-shadow: 0 12px 30px rgba(236, 25, 25, 0.842);
@@ -484,7 +484,7 @@ footer {
 
 .team-card h3 {
     margin-bottom: 8px;
-    color: #7C3AED;
+    color: #260361;
 }
 /* ===============================
    ABOUT INTRO
