@@ -241,7 +241,7 @@ nav a:hover {
 ================================= */
 
 .ceo-section {
-    padding: 60px 0;
+    padding: 100px 0;
     background: white;
 }
 
@@ -497,15 +497,15 @@ footer {
 }
 
 .about-intro h1 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 32px;
     color: #0F172A;
 }
 
 .about-intro p {
-    max-width: 700px;
+    max-width: 800px;
     margin: auto;
-    color: #374151;
+    color: #001caf;
 }
 
 
