@@ -382,8 +382,8 @@ footer {
 
 /* Big Cards */
 .service-card {
-    min-width: 340px;
-    max-width: 340px;
+    min-width: 400px;
+    max-width: 400px;
     padding: 40px 30px;
     border-radius: 10px;
     position: relative;
@@ -394,8 +394,8 @@ footer {
 
 /* Gradient Border Effect */
 .service-card {
-    min-width: 340px;
-    max-width: 340px;
+    min-width: 400px;
+    max-width: 400px;
     padding: 40px 30px;
     border-radius: 10px;
     background: rgb(232, 252, 185);
@@ -405,7 +405,7 @@ footer {
     /* Gradient Border Trick */
     border: 1px solid transparent;
     background-image:
-        linear-gradient(rgb(248, 187, 187), white),
+        linear-gradient(rgb(202, 226, 28), white),
         linear-gradient(135deg, #7C3AED, #06B6D4);
     /* background-origin: border-box;
     background-clip: padding-box, border-box; */
@@ -418,9 +418,9 @@ footer {
 
 /* Icon Styling */
 .icon {
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 20px;
-    color: #7C3AED;
+    color: #f01f26;
 }
 
 /* Text Styling */
@@ -455,7 +455,7 @@ footer {
 
 .team-card {
     min-width: 250px;
-    background: rgba(156, 247, 115, 0.973);
+    background: rgba(35, 137, 231, 0.973);
     padding: 30px;
     border-radius: 18px;
     box-shadow: 0 12px 30px rgba(236, 25, 25, 0.842);
